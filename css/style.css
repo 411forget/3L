@@ -1075,10 +1075,10 @@ a.article-title:hover {
   color: #ddd;
 }
 #footer {
-  background: #262a30;
+  background: #CC66FF;
   padding: 50px 0;
   border-top: 1px solid #ddd;
-  color: #CC66FF;
+  color: #999;
 }
 #footer a {
   color: #258fb8;
