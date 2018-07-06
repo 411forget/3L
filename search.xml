@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[my-first-blog]]></title>
+    <title><![CDATA[hexo+github搭建个人博客]]></title>
+    <url>%2F2018%2F07%2F05%2Fhexo-git-20180705%2F</url>
+    <content type="text"><![CDATA[hexo+github搭建个人博客 一、准备工作 注册一个github账号 安装Git Nodejs 二、git的相关配置 仓库名字必须是： username.github.io ，其中username是你的用户名； 配置SSH key（=&gt;Settings）: 提交代码到git肯定要拥有你的github权限才可以，使用ssh key来解决本地和服务 器的连接问题 三、安装hexo，搭建简单的博客框架Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有很多优秀插件和主题。 官网： http://hexo.iogithub: https://github.com/hexojs/hexo 下面带$的命令都是在Git Brash窗口下发1、安装 &gt; $ npm install -g hexo 2、在本地新建一个文件夹存放代码 $ cd /e/Workspaces/hexo/ 3、hexo初始化 $ hexo init 4、生成html $ hexo g 5、启动本地服务 $ hexo s -debug 以上操作搭建博客需要的代码都会下载到本地，如图： 6、一个基础的博客框架搞定打开http://localhost:4000/本地可以可以看到效果 6、上传文件到git托管怎么让新建的博客，其他人也可以访问？现在需要把我们代码文件夹push到git上去托管步骤： $ cd /e/WorkSpaces/hexo/ =====进入指定目录 $ hexo clean ; hexo generate $ hexo deploy $ hexo d 6、访问我的博客https://411forget.github.io/]]></content>
+      <categories>
+        <category>hexo相关</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[休息站]]></title>
     <url>%2F2018%2F07%2F01%2Fmy-first-blog-1%2F</url>
     <content type="text"><![CDATA[老師說＂人生的起跑點都是一樣的？＂]]></content>
       <categories>
