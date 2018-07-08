@@ -399,83 +399,18 @@
 
       
         
-          
-            <h2 id="hexo-github-NexT"><a href="#hexo-github-NexT" class="headerlink" title="hexo+github+NexT"></a>hexo+github+NexT</h2><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>用 <code>[TOC]</code>来生成目录：</p>
-<p>[TOC]   </p>
-<hr>
+          <h2 id="hexo-github-NexT"><a href="#hexo-github-NexT" class="headerlink" title="hexo+github+NexT"></a>hexo+github+NexT</h2><hr>
 <h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
 <li>注册一个github账号</li>
 <li>安装Git</li>
-<li>Nodejs</li>
-</ul>
-<h2 id="二、git的相关配置"><a href="#二、git的相关配置" class="headerlink" title="二、git的相关配置"></a>二、git的相关配置</h2><ul>
-<li>仓库名字必须是： <code>username.github.io</code> ，其中username是你的用户名；<br><img src="https://img-blog.csdn.net/2018070622060735?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="github用户名"></li>
-<li><p>配置SSH key（=&gt;Settings）:</p>
-<p><img src="https://img-blog.csdn.net/20180706215548565?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="ssh图片"><br>提交代码到git肯定要拥有你的github权限才可以，使用ssh key来解决本地和服务     器的连接问题</p>
-</li>
-</ul>
-<h2 id="三、安装hexo，搭建简单的博客框架"><a href="#三、安装hexo，搭建简单的博客框架" class="headerlink" title="三、安装hexo，搭建简单的博客框架"></a>三、安装hexo，搭建简单的博客框架</h2><p>Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有很多优秀插件和主题。</p>
-<p>官网：  <a href="http://hexo.io" target="_blank" rel="noopener">http://hexo.io</a><br>github:  <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></p>
-<p><strong>1、安装</strong><br>    &gt;  $ npm install -g hexo</p>
-<p><strong>2、在本地新建一个文件夹存放代码</strong></p>
-<blockquote>
-<p> $ cd /e/Workspaces/hexo/</p>
-</blockquote>
-<p><strong>3、hexo初始化</strong></p>
-<blockquote>
-<p> $ hexo init</p>
-</blockquote>
-<p><strong>4、生成html</strong></p>
-<blockquote>
-<p>$ hexo g</p>
-</blockquote>
-<p><strong>5、启动本地服务</strong></p>
-<blockquote>
-<p>$ hexo s -debug</p>
-</blockquote>
-<p>以上操作搭建博客需要的代码都会下载到本地，如图：<br><img src="https://img-blog.csdn.net/20180706221929297?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="本地文件图片"></p>
-<p><strong>6、一个基础的博客框架搞定</strong><br>打开<a href="http://localhost:4000/本地可以可以看到效果" target="_blank" rel="noopener">http://localhost:4000/本地可以可以看到效果</a><br><img src="https://img-blog.csdn.net/20180706222721564?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果图"></p>
-<p><strong>6、上传文件到git托管</strong><br>怎么让新建的博客，其他人也可以访问？<br>现在需要把我们代码文件夹push到git上去托管<br>步骤：</p>
-<blockquote>
-<p>$ cd /e/WorkSpaces/hexo/      =====进入指定目录</p>
-</blockquote>
-<blockquote>
-<p>$ hexo clean ; hexo generate</p>
-</blockquote>
-<blockquote>
-<p>$ hexo deploy</p>
-</blockquote>
-<blockquote>
-<p>$ hexo d</p>
-</blockquote>
-<p><strong>6、访问我的博客</strong><br><a href="https://411forget.github.io/" target="_blank" rel="noopener">https://411forget.github.io/</a></p>
-<h2 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h2><p>  <a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题链接</a></p>
-<p>  这里举例使用next主题：</p>
-<ol>
-<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT链接</a></li>
-<li><p>使用git克隆的方式，之后的更新可以通过 git pull 来快速更新<br>步骤如下：</p>
-<blockquote>
-<p>$ cd  /e/WorkSpaces/hexo/ </p>
-</blockquote>
-<blockquote>
-<p>$ git clone <a href="https://github.com/iissnan/hexo-theme-next.git" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next.git</a> themes/next</p>
-</blockquote>
-</li>
-</ol>
-<p>修改  站点配置文件<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: next</code>。<br>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前， 我们最好使用 <code>hexo clean</code> 来清除 Hexo 的缓存,然后启动本地服务<code>hexo s</code>,打开<a href="http://localhost:4000/本地可以可以看到效果。" target="_blank" rel="noopener">http://localhost:4000/本地可以可以看到效果。</a></p>
-<h2 id="五、开始写博客"><a href="#五、开始写博客" class="headerlink" title="五、开始写博客"></a>五、开始写博客</h2><blockquote>
-<p>$ cd /e/WorkSpaces/hexo/</p>
-</blockquote>
-<blockquote>
-<p>$ hexo new ‘blog20180708’</p>
-</blockquote>
-<p>此时会在E:\WorkSpaces\hexo\source_posts文件夹下生成一个<code>blog20180708.md</code>文件，编写md文件，然后利用<code>hexo g</code>来生成；</p>
-<p>【推荐使用csdn写博客，写完之后的md文件可以直接用于个人博客的发布。】</p>
-<p>md文件的书写格式在csdn写作时有很好的示例提供：<br><img src="https://img-blog.csdn.net/20180708173816891?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="md文件的书写格式"></p>
-<h2 id="六、hexo官网："><a href="#六、hexo官网：" class="headerlink" title="六、hexo官网："></a>六、hexo官网：</h2><p>  <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo网址</a></p>
-<hr>
-
-          
+<li><p>Nodejs</p></li></ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/05/hexo-git-20180705/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
