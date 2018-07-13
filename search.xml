@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ruby-excel-2018073]]></title>
+    <url>%2F2018%2F07%2F13%2Fruby-excel-2018073%2F</url>
+    <content type="text"><![CDATA[Ruby读写excel表格 Win32ole是访问Windows自动化的接口，可以让Ruby和Windows应用进行交互。具体说来Win32ole可以操作Word,Excel,IE,Outlook等。 一、完整代码及效果图 test1.xlsxtest2.xlsx 二、具体代码加载win32ole模块 #encoding=UTF-8 require ‘win32ole’ excel=WIN32OLE::new(“excel.Application”) 操作excel1：打开=》选择第一个sheet页=》读取表格内容=》关闭表格 work1=excel.workbooks.open(‘C:\Users\Administrator\Desktop\test\before.xlsx’)excel.visible = trueworksheet=work1.Worksheets(1)data=worksheet.Range(“A1:B#{worksheet.usedrange.rows.count}”).Valuework1.close() 操作excel2：新建=》另存为=》打开=》选择sheet1=》添加表头信息=》写入数据=》保存关闭 work2 =excel.workbooks.addwork2.saveas(‘C:\Users\Administrator\Desktop\test\test2.xlsx’) #另存为begin work2=excel.workbooks.open(‘C:\Users\Administrator\Desktop\test\test2.xlsx’) worksheet=work2.Worksheets(1) worksheet.Range(‘a1:b1’).Value= [‘序号’,’名称’] line=2 data.each{|para| puts line worksheet.Range(“a#{line}”).Value= para[0] worksheet.Range(“b#{line}”).Value= para[1] line+=1 }work2.save #保存work2.close()excel.quitrescue Exception =&gt; e excel.quit puts e.messageend 三、其他操作表格的方法对单元格的操作: 某个单元格: sheet.range(“a1”) a1到b2的值: sheet.range(“a1”, “b2”) 或 sheet.range(“a1:b2”) 第一列: sheet.range(“a:a”) 第一行: sheet.range(“1:1”) 获得单元格的值: range.text #读取值,返回为字符串格式,如果单元格内为数字,有可能会被截断小数点后的位数sheet.range(“a1”).text range.value #读取值,数字不会截断sheet.range(“a1”).value 对单元格设置值sheet.range(“a1”).value = 1.2345 调用宏定义excel.Run(‘SortByNumber’) 迭代访问表格数据: sheet.range(“a1:a5”).each{|cell| puts cell.value} sheet.range(“b1:c5”).rows.each{|row| puts row.cells(1,1).value}]]></content>
+      <categories>
+        <category>ruby</category>
+      </categories>
+      <tags>
+        <tag>ruby+excel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo+github搭建个人博客]]></title>
     <url>%2F2018%2F07%2F05%2Fhexo-git-20180705%2F</url>
     <content type="text"><![CDATA[hexo+github+NexT 一、准备工作 注册一个github账号 安装Git Nodejs 二、git的相关配置 仓库名字必须是： username.github.io ，其中username是你的用户名； 配置SSH key（=&gt;Settings）: 提交代码到git肯定要拥有你的github权限才可以，使用ssh key来解决本地和服务 器的连接问题 三、安装hexo，搭建简单的博客框架Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有很多优秀插件和主题。 github: https://github.com/hexojs/hexo 1、安装 &gt; $ npm install -g hexo 2、在本地新建一个文件夹存放代码 $ cd /e/Workspaces/hexo/ 3、hexo初始化 $ hexo init 4、生成html $ hexo g 5、启动本地服务 $ hexo s -debug 以上操作搭建博客需要的代码都会下载到本地，如图： 6、一个基础的博客框架搞定打开localhost:4000本地可以可以看到效果 6、上传文件到git托管怎么让新建的博客，其他人也可以访问？现在需要把我们代码文件夹push到git上去托管步骤： $ cd /e/WorkSpaces/hexo/ =====进入指定目录 $ hexo clean ; hexo generate $ hexo deploy $ hexo d 6、访问我的博客https://411forget.github.io/ 四、更换主题 主题链接 这里举例使用next主题： NexT链接 使用git克隆的方式，之后的更新可以通过 git pull 来快速更新步骤如下： $ cd /e/WorkSpaces/hexo/ $ git clone https://github.com/iissnan/hexo-theme-next.git themes/next 修改 站点配置文件_config.yml中的theme: landscape改为theme: next。到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前， 我们最好使用 hexo clean 来清除 Hexo 的缓存,然后启动本地服务hexo s,打开localhost:4000本地可以可以看到效果。 五、开始写博客 $ cd /e/WorkSpaces/hexo/ $ hexo new ‘blog20180708’ 此时会在E:\WorkSpaces\hexo\source_posts文件夹下生成一个blog20180708.md文件，编写md文件，然后利用hexo g来生成； 【推荐使用csdn写博客，写完之后的md文件可以直接用于个人博客的发布。】 md文件的书写格式在csdn写作时有很好的示例提供： 六、hexo官网： hexo网址]]></content>
