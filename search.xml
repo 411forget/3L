@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[gitweb20180724]]></title>
+    <title><![CDATA[怎么把自己做的网页托管在github上]]></title>
     <url>%2F2018%2F07%2F24%2Fgitweb20180724%2F</url>
     <content type="text"><![CDATA[没有域名和服务器的前提下，怎么可以访问到我们的网页呢？可以把网页代码托管在github，同样可以以站点的方式访问。实践网址示例：https://411forget.github.io/shufa.github.io/ 1、准备条件 注册一个github账号 安装Git 在github创建一个存储库，用来存放我们页面的相关代码文件 2、git的操作方法12345678910111213…or create a new repository on the command lineecho &quot;# yufa.github.io&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git remote add origin git@github.com:411forget/shufa.github.io.gitgit push -u origin master…or push an existing repository from the command linegit remote add origin git@github.com:411forget/shufa.github.io.gitgit push -u origin master…or import code from another repositoryYou can initialize this repository with code from a Subversion, Mercurial, or TFS project.Import code 3、将本地网页的所有代码文件都push到github上注意：将需要将主页的html文件命名为index.html 最后的文件全部push上去的效果如下： 4、现在可以打开网址看一下效果具体网址是什么？ 如果打不开网址：可能是pages还是none的状态，自己设置下即可 网址打开后的效果图：]]></content>
       <categories>
