@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaScript基础知识（字符串、数组、数字、算数、日期）]]></title>
+    <url>%2F2018%2F08%2F06%2Fjsjichu20180806%2F</url>
+    <content type="text"><![CDATA[JavaScript1、字符串方法 方法 功能 示例 charAt() 返回指定索引位置的字符 charCodeAt() 返回指定索引位置字符的 Unicode 值 concat() 连接两个或多个字符串，返回连接后的字符串 fromCharCode() 将 Unicode 转换为字符串 |indexOf() |返回字符串中检索指定字符第一次出现的位置|”hello”.indexOf(‘l’) #2||lastIndexOf() |返回字符串中检索指定字符最后一次出现的位置|||localeCompare() |用本地特定的顺序来比较两个字符串|match() |找到一个或多个正则表达式的匹配|replace() |替换与正则表达式匹配的子串|”hello”.replace(“o”,”h”) #hellh||search() |检索与正则表达式相匹配的值|”hello”.search(“o”) #4||slice() |提取字符串的片断，并在新的字符串中返回被提取的部分|split() |把字符串分割为子字符串数组|”hello”.split(“e”) #[‘h’,’llo’]||substr() |从起始索引号提取字符串中指定数目的字符|substring() |提取字符串中两个指定的索引号之间的字符|toLocaleLowerCase()|根据主机的语言环境把字符串转换为小写，只有几种语言（如土耳其语）具有地方特有的大小写映射|toLocaleUpperCase()|根据主机的语言环境把字符串转换为大写，只有几种语言（如土耳其语）具有地方特有的大小写映射|toLowerCase() |把字符串转换为小写|toString() |返回字符串对象值|var num=3;num.toString();#’3’||toUpperCase() |把字符串转换为大写|trim() |移除字符串首尾空白|valueOf() |返回某个字符串对象的原始值 2、数组方法 方法 功能 示例 concat() 合并两个或更多数组 [“hello”,”world”].concat(“javascript”) #hello,world,javascript join() 把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。 pop() 删除数组的最后一个元素 push() 数组的末尾添加新的元素 reverse() 将一个数组中的元素的顺序反转排序 shift() 删除数组的第一个元素 slice() 从某个已有的数组返回选定的元素 sort() 数组排序 splice() 删除元素，并向数组添加新元素。 toString() 转换数组到字符串 unshift() 在数组的开头添加新元素 valueOf() 返回数组对象的原始值 3、数字 属性: 属性 功能 示例 MAX_VALUE JavaScript 中可表示的最大的数 Number.MAX_VALUE MIN_VALUE JavaScript 中可表示的最小的数 NEGATIVE_INFINITY 该值代表负无穷大。 POSITIVE_INFINITY 表示大于 Number.MAX_VALUE 的值。该值代表正无穷大。 NaN 该属性用于指示某个值不是数字。 isNaN() 全局函数来判断一个值是否是 NaN值。 prototype 属性使您有能力向对象添加属性和方法 object.prototype.name=value constructor 返回对创建此对象的数组函数的引用。 if (test.constructor==Array) 数字方法: 方法 功能 示例 toExponential() 把对象的值转换成指数计数法。 toFixed() 把 Number 四舍五入为指定小数位数的数字。 toString() 转字符串 valueOf() 可返回 Boolean 对象的原始值。如果调用该方法的对象不是 Boolean，则抛出异常 TypeError。 4、Math(算数) 方法 功能 示例 round() 对数字进行舍入 random() 返回 0 到 1 之间的随机数 max() 返回两个给定的数中的较大的数 min() 返回两个给定的数中的较小的数 floor() 可对一个数进行下舍入。返回的是小于或等于函数参数，并且与之最接近的整数。 eg.生成0-7之间的随机数document.write(Math.floor(Math.random()*7)) 5、Date日期 方法 功能 示例 getFullYear() 获取年份 var today=new Date(); today.getFullYear() getTime() 返回从 1970 年 1 月 1 日至今的毫秒数。 setFullYear() 设置具体的日期 toUTCString() 将当日的日期（根据 UTC）转换为字符串 getDay() 使用 getDay() 和数组来显示星期，而不仅仅是数字]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[怎么以站点的方式访问我们的网站-github托管]]></title>
     <url>%2F2018%2F07%2F24%2Fgitweb20180724%2F</url>
     <content type="text"><![CDATA[没有域名和服务器的前提下，怎么可以访问到我们的网页呢？可以把网页代码托管在github，同样可以以站点的方式访问。实践网址示例：https://411forget.github.io/shufa.github.io/ 1、准备条件 注册一个github账号 安装Git 在github创建一个存储库，用来存放我们页面的相关代码文件 2、git的操作方法12345678910111213…or create a new repository on the command lineecho &quot;# yufa.github.io&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git remote add origin git@github.com:411forget/shufa.github.io.gitgit push -u origin master…or push an existing repository from the command linegit remote add origin git@github.com:411forget/shufa.github.io.gitgit push -u origin master…or import code from another repositoryYou can initialize this repository with code from a Subversion, Mercurial, or TFS project.Import code 3、将本地网页的所有代码文件都push到github上注意：将需要将主页的html文件命名为index.html 最后的文件全部push上去的效果如下： 4、现在可以打开网址看一下效果具体网址是什么？ 如果打不开网址：可能是pages还是none的状态，自己设置下即可 网址打开后的效果图：]]></content>
