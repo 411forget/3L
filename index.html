@@ -300,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/01/19/在虚拟机virtualbox中安装linux/">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/git使用教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="3L">
@@ -319,7 +319,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/19/在虚拟机virtualbox中安装linux/" itemprop="url">未命名</a></h2>
+                <a class="post-title-link" href="/2019/02/23/git使用教程/" itemprop="url">Git 使用教程</a></h2>
         
 
         <div class="post-meta">
@@ -331,8 +331,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-19T10:43:53+08:00">
-                2019-01-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
               </time>
             
 
@@ -342,6 +342,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -350,9 +372,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/19/在虚拟机virtualbox中安装linux/#comments" itemprop="discussionUrl">
+                <a href="/2019/02/23/git使用教程/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/01/19/在虚拟机virtualbox中安装linux/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/02/23/git使用教程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,65 +403,19 @@
 
       
         
-          
-            <p>@<a href="在虚拟机virtualbox中安装linux">TOC</a></p>
-<h2 id="一、安装Linux的两种方式："><a href="#一、安装Linux的两种方式：" class="headerlink" title="一、安装Linux的两种方式："></a>一、安装Linux的两种方式：</h2><ol>
-<li>安装双系统</li>
-<li>安装虚拟机，在虚拟机上装Linux</li>
-</ol>
-<p>作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。</p>
-<h2 id="二、安装virtualbox虚拟机"><a href="#二、安装virtualbox虚拟机" class="headerlink" title="二、安装virtualbox虚拟机"></a>二、安装virtualbox虚拟机</h2><p>下载安装链接参考如下：</p>
-<p><a href="https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html" target="_blank" rel="noopener">https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html</a></p>
-<h2 id="三、下载Linux镜像"><a href="#三、下载Linux镜像" class="headerlink" title="三、下载Linux镜像"></a>三、下载Linux镜像</h2><ol>
-<li><p><strong>CentOS</strong>（社区企业操作系统） 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。</p>
-<p> <strong>官网：</strong><br> <a href="https://www.centos.org/" target="_blank" rel="noopener">https://www.centos.org/</a></p>
-<p> <strong>中文网站：</strong><br> <a href="https://www.centoschina.cn/" target="_blank" rel="noopener">https://www.centoschina.cn/</a></p>
-</li>
-</ol>
-<ol start="2">
-<li><p>下载Linux镜像分两种平台：<br>  i386<br> x86_64</p>
-</li>
-<li><p>如何看自己应该下载哪种镜像，才能正确安装？</p>
-<p> 打开已安装的virtualbox，如图，若新建虚拟电脑中选项中Linux是32位的就下载i386的Linux镜像。<br> <img src="https://img-blog.csdnimg.cn/20181104164157366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="新建虚拟电脑"></p>
-</li>
-</ol>
-<ol start="4">
-<li><p>怎么下载Linux镜像？</p>
-<p> 从CentOS官网下载系统镜像详细教程：<br> <a href="https://jingyan.baidu.com/album/1876c85279cedd890a13766c.html?picindex=8" target="_blank" rel="noopener">https://jingyan.baidu.com/album/1876c85279cedd890a13766c.html?picindex=8</a></p>
-</li>
-</ol>
-<p>因为我是32位的，安装步骤如下：<br><img src="https://img-blog.csdnimg.cn/2018110416565721.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104165740974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104165753589.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p>随便选择一个镜像地址就可以：<br><img src="https://img-blog.csdnimg.cn/20181104165950723.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p>这里选择清华大学开源软件镜像站，下载即可：<br><img src="https://img-blog.csdnimg.cn/20181104170001212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<h2 id="四、安装Linux"><a href="#四、安装Linux" class="headerlink" title="四、安装Linux"></a>四、安装Linux</h2><p>==打开已安装的virtualbox==</p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205435403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205450581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205506445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205523728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205538709.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205558582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110420561265.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205956131.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==将步骤三中下载的linux镜像加载进来==<br><img src="https://img-blog.csdnimg.cn/201811042100106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104210019755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110421003326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==出现下图界面时按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104210905579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104210916363.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104210924831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104210938312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==出现下图，等待check==<br><img src="https://img-blog.csdnimg.cn/20181104211359380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104211551837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104212509496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104212522292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==出现下图时，说明没加载上镜像，手动在设备中重新选择下==<br><img src="https://img-blog.csdnimg.cn/20181104213858596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/201811042152487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104215940792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110422000867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220018957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110422004892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220102222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220113225.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220128534.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220150517.png" alt="在这里插入图片描述"></p>
-<h2 id="五、安装后打开所创建的linux系统"><a href="#五、安装后打开所创建的linux系统" class="headerlink" title="五、安装后打开所创建的linux系统"></a>五、安装后打开所创建的linux系统</h2><p>文字界面：Ctrl+Alt+F1-F6<br>图形界面：Ctrl+Alt +F7</p>
-<p>效果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220933688.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==图形界面==<br><img src="https://img-blog.csdnimg.cn/20181104220946968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==文字界面==<br><img src="https://img-blog.csdnimg.cn/20181104221226633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-
-          
+          <h2 id="windows下使用git的方法"><a href="#windows下使用git的方法" class="headerlink" title="windows下使用git的方法"></a>windows下使用git的方法</h2><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><h2 id="toc"><a href="#toc" class="headerlink" title="@[toc]"></a>@[toc]</h2><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
+<li>注册一个github账号</li>
+<li>安装Git</li>
+<li>官网（<a href="https://git-scm.com/）" target="_blank" rel="noopener">https://git-scm.com/）</a></li>
+</ul>
+<h2 id="二、在github上的配置"><a href="#二、在github上的配置" class="headerlink" title="二、在github上的配置"></a>二、在github上的配置</h2><h3 id="1、新建一个仓库名"><a href="#1、新建一个仓库名" class="headerlink" title="1、新建一个仓库名"></a>1、新建一个仓库名</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/23/git使用教程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -490,7 +466,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/08/12/【自动化测试】selenium+python基础20180812/">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/Linux命令备忘/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="3L">
@@ -509,7 +485,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/12/【自动化测试】selenium+python基础20180812/" itemprop="url">【自动化测试】selenium+python基础</a></h2>
+                <a class="post-title-link" href="/2019/02/23/Linux命令备忘/" itemprop="url">Linux命令备忘</a></h2>
         
 
         <div class="post-meta">
@@ -521,8 +497,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T21:29:33+08:00">
-                2018-08-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
               </time>
             
 
@@ -544,8 +520,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/自动化测试/" itemprop="url" rel="index">
-                    <span itemprop="name">自动化测试</span>
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
                   </a>
                 </span>
 
@@ -562,9 +538,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/12/【自动化测试】selenium+python基础20180812/#comments" itemprop="discussionUrl">
+                <a href="/2019/02/23/Linux命令备忘/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/08/12/【自动化测试】selenium+python基础20180812/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/02/23/Linux命令备忘/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -593,14 +569,839 @@
 
       
         
-          <h4 id="一、selenium简介"><a href="#一、selenium简介" class="headerlink" title="一、selenium简介"></a>一、selenium简介</h4><ul>
-<li>免费的分布式的自动化测试工具；</li>
-<li>支持多平台：windows、linux、MAC ；</li>
-<li>支持多浏览器：ie、ff、safari、opera、chrome；</li>
-<li>多语言C、 java、ruby、python</li></ul>
+          <p>@<a href="Linux命令备忘">TOC</a></p>
+<h2 id="1-ip相关"><a href="#1-ip相关" class="headerlink" title="1.ip相关"></a>1.ip相关</h2><h3 id="1-1-命令查看Linux服务器ip"><a href="#1-1-命令查看Linux服务器ip" class="headerlink" title="1.1.命令查看Linux服务器ip"></a>1.1.命令查看Linux服务器ip</h3><pre><code>ifconfig
+</code></pre><h3 id="1-2-Linux下用ifconfig命令设置IP、掩码、网关"><a href="#1-2-Linux下用ifconfig命令设置IP、掩码、网关" class="headerlink" title="1.2. Linux下用ifconfig命令设置IP、掩码、网关"></a>1.2. Linux下用ifconfig命令设置IP、掩码、网关</h3><p>设置IP和掩码</p>
+<pre><code>ifconfig eth0 192.168.2.21 netmask 255.255.255.0
+</code></pre><p>设置网关</p>
+<pre><code>route add default gw 192.168.2.1
+</code></pre><h2 id="2、ftp"><a href="#2、ftp" class="headerlink" title="2、ftp"></a>2、ftp</h2><p>查看ftp服务的状态：<br></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/08/12/【自动化测试】selenium+python基础20180812/#more" rel="contents">
+            <a class="btn" href="/2019/02/23/Linux命令备忘/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	
+    <div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/【Ruby】基础整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3L">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3L的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/23/【Ruby】基础整理/" itemprop="url">【Ruby】基础整理</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ruby/" itemprop="url" rel="index">
+                    <span itemprop="name">Ruby</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/23/【Ruby】基础整理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/23/【Ruby】基础整理/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="1-在cmd下进入ruby解释器环境"><a href="#1-在cmd下进入ruby解释器环境" class="headerlink" title="1.在cmd下进入ruby解释器环境"></a>1.在cmd下进入ruby解释器环境</h2><pre><code>cmd-》输入irb
+</code></pre><h2 id="2-获取当前文件路径"><a href="#2-获取当前文件路径" class="headerlink" title="2.获取当前文件路径"></a>2.获取当前文件路径</h2><pre><code>File.dirname(__FILE__)
+</code></pre><h2 id="3-Ruby-web请求"><a href="#3-Ruby-web请求" class="headerlink" title="3.Ruby web请求"></a>3.Ruby web请求</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/23/【Ruby】基础整理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	
+    <div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/解决hexo+github+NexT搭建个人博客遇到的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3L">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3L的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/23/解决hexo+github+NexT搭建个人博客遇到的问题/" itemprop="url">解决hexo+github+NexT搭建个人博客遇到的问题</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo-github-NexT/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo+github+NexT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/23/解决hexo+github+NexT搭建个人博客遇到的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/23/解决hexo+github+NexT搭建个人博客遇到的问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>1、报错不识别num命令：<br>bash: num: command not found<br>未安装node.js或未正确安装node.js<br>官方下载地址：<br><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<p>下载安装时选择安装所有的有关联的包</p>
+<p>2.报错：执行$ hexo init 时报错：</p>
+<pre><code>$ hexo init blog
+bash: hexo: command not found
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/23/解决hexo+github+NexT搭建个人博客遇到的问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	
+    <div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/使用终端工具MobaXterm登录linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3L">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3L的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/23/使用终端工具MobaXterm登录linux/" itemprop="url">使用终端工具MobaXterm登录linux</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/23/使用终端工具MobaXterm登录linux/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/23/使用终端工具MobaXterm登录linux/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>@<a href="使用终端工具MobaXterm登录linux">TOC</a></p>
+<p><strong>背景 : 访问虚拟机中的Linux，界面不友好，使用不方便快捷，可以下载终端工具MobaXterm来登录linux来快速访问</strong></p>
+<hr>
+<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><h3 id="1、MobaXterm下载"><a href="#1、MobaXterm下载" class="headerlink" title="1、MobaXterm下载"></a>1、MobaXterm下载</h3><p>官网下载地址（有免费版）：<br><a href="https://mobaxterm.mobatek.net/download.html" target="_blank" rel="noopener">https://mobaxterm.mobatek.net/download.html</a></p>
+<p>官网主页：<br><a href="https://mobaxterm.mobatek.net/" target="_blank" rel="noopener">https://mobaxterm.mobatek.net/</a><br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/23/使用终端工具MobaXterm登录linux/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	
+    <div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3L">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3L的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/" itemprop="url">【ruby】批量刷新目录下指定文件内的字段</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ruby/" itemprop="url" rel="index">
+                    <span itemprop="name">Ruby</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/23/【ruby】批量刷新目录下指定文件内的字段/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>【功能】</p>
+<p><strong>1、操作目录</strong>：F:\my job\tools\2019test_file<br><strong>2、查找文件</strong>：result.txt<br><strong>3、需要动态获取的字段</strong>：例arr=Dev.add(“Ec_1”)之中的arr字段（不同的result.txt文件中的字段可能不同，该字段是动态的，可以使用正则来匹配）<br><strong>4、原字段</strong>：self.manage<br><strong>5、新字段</strong>：步骤3中获取到的字段<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	
+    <div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/在虚拟机virtualbox中安装linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3L">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3L的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/23/在虚拟机virtualbox中安装linux/" itemprop="url">在虚拟机virtualbox中安装linux</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/23/在虚拟机virtualbox中安装linux/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/23/在虚拟机virtualbox中安装linux/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="一、安装Linux的两种方式："><a href="#一、安装Linux的两种方式：" class="headerlink" title="一、安装Linux的两种方式："></a>一、安装Linux的两种方式：</h2><ol>
+<li>安装双系统</li>
+<li>安装虚拟机，在虚拟机上装Linux</li>
+</ol>
+<p>作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。</p>
+<h2 id="二、安装virtualbox虚拟机"><a href="#二、安装virtualbox虚拟机" class="headerlink" title="二、安装virtualbox虚拟机"></a>二、安装virtualbox虚拟机</h2><p>下载安装链接参考如下：</p>
+<p><a href="https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html" target="_blank" rel="noopener">https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html</a><br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/23/在虚拟机virtualbox中安装linux/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -817,6 +1618,171 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/08/12/【自动化测试】selenium+python基础20180812/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3L">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="3L的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/12/【自动化测试】selenium+python基础20180812/" itemprop="url">【自动化测试】selenium+python基础</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T21:29:33+08:00">
+                2018-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/自动化测试/" itemprop="url" rel="index">
+                    <span itemprop="name">自动化测试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/12/【自动化测试】selenium+python基础20180812/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/12/【自动化测试】selenium+python基础20180812/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="一、selenium简介"><a href="#一、selenium简介" class="headerlink" title="一、selenium简介"></a>一、selenium简介</h4><ul>
+<li>免费的分布式的自动化测试工具；</li>
+<li>支持多平台：windows、linux、MAC ；</li>
+<li>支持多浏览器：ie、ff、safari、opera、chrome；</li>
+<li>多语言C、 java、ruby、python</li></ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/12/【自动化测试】selenium+python基础20180812/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	
+    <div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/08/06/jsjichu20180806/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -965,993 +1931,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/07/24/gitweb20180724/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3L">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3L的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/24/gitweb20180724/" itemprop="url">怎么以站点的方式访问我们的网站-github托管</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-24T17:30:00+08:00">
-                2018-07-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web/" itemprop="url" rel="index">
-                    <span itemprop="name">web</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/24/gitweb20180724/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/24/gitweb20180724/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <ul>
-<li>没有域名和服务器的前提下，怎么可以访问到我们的网页呢？<br>可以把网页代码托管在github，同样可以以站点的方式访问。<br>实践网址示例：<br><a href="https://411forget.github.io/shufa.github.io/" target="_blank" rel="noopener">https://411forget.github.io/shufa.github.io/</a></li>
-</ul>
-<hr>
-<h2 id="1、准备条件"><a href="#1、准备条件" class="headerlink" title="1、准备条件"></a>1、准备条件</h2><ul>
-<li>注册一个github账号</li>
-<li>安装Git</li>
-<li>在github创建一个存储库，用来存放我们页面的相关代码文件</li></ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/24/gitweb20180724/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	
-    <div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/07/22/ruby-on-rails-20180722/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3L">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3L的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/22/ruby-on-rails-20180722/" itemprop="url">Ruby On Rails环境配置</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-22T15:16:34+08:00">
-                2018-07-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ruby/" itemprop="url" rel="index">
-                    <span itemprop="name">ruby</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/22/ruby-on-rails-20180722/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/22/ruby-on-rails-20180722/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Ruby 简洁，不难理解。它可以让你快速地用代码自然 , 清晰表达想法。<br>Ruby on Rails 是一个可以使你开发、部署、维护 web 应用程序变得简单的MVC框架。</p>
-<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
-<li>安装Ruby 2.2.2 及以上版本 <a href="https://rubyinstaller.org/downloads/" target="_blank" rel="noopener">安装包链接</a></li>
-<li>包管理工具 <a href="https://rubygems.org/" target="_blank" rel="noopener">RubyGems</a> ，随 Ruby 预装。</li>
-<li><a href="https://www.sqlite.org/index.html" target="_blank" rel="noopener">SQLite3 数据库</a></li>
-<li>Ruby 的在线资源：<a href="https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#ruby" target="_blank" rel="noopener">免费编程图书列表</a></li></ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/22/ruby-on-rails-20180722/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	
-    <div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/07/13/ruby-excel-2018073/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3L">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3L的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/13/ruby-excel-2018073/" itemprop="url">Ruby读写excel表格</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-13T21:59:52+08:00">
-                2018-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ruby/" itemprop="url" rel="index">
-                    <span itemprop="name">ruby</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/13/ruby-excel-2018073/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/13/ruby-excel-2018073/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Win32ole是访问Windows自动化的接口，可以让Ruby和Windows应用进行交互。<br>具体说来Win32ole可以操作Word,Excel,IE,Outlook等。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/13/ruby-excel-2018073/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	
-    <div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/07/05/hexo-git-20180705/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3L">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3L的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/05/hexo-git-20180705/" itemprop="url">hexo+github搭建个人博客</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-05T22:09:52+08:00">
-                2018-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo相关/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo相关</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/05/hexo-git-20180705/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/05/hexo-git-20180705/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="hexo-github-NexT"><a href="#hexo-github-NexT" class="headerlink" title="hexo+github+NexT"></a>hexo+github+NexT</h2><hr>
-<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
-<li>注册一个github账号</li>
-<li>安装Git</li>
-<li><p>Nodejs</p></li></ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/05/hexo-git-20180705/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	
-    <div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/07/01/my-first-blog-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3L">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3L的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/01/my-first-blog-1/" itemprop="url">休息站</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-01T21:00:08+08:00">
-                2018-07-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/解压/" itemprop="url" rel="index">
-                    <span itemprop="name">解压</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/01/my-first-blog-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/01/my-first-blog-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>老師說＂人生的起跑點都是一樣的？＂<br><img src="/2018/07/01/my-first-blog-1/it1.jpg" alt="图片"><br></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/01/my-first-blog-1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	
-    <div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/07/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="3L">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="3L的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/01/hello-world/" itemprop="url">Hello World</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-01T15:45:55+08:00">
-                2018-07-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo相关/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo相关</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/01/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/07/01/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/01/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	
-    <div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1999,7 +1985,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2010,7 +1996,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2021,7 +2007,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>

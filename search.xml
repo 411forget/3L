@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2019%2F01%2F19%2F%E5%9C%A8%E8%99%9A%E6%8B%9F%E6%9C%BAvirtualbox%E4%B8%AD%E5%AE%89%E8%A3%85linux%2F</url>
-    <content type="text"><![CDATA[@TOC 一、安装Linux的两种方式： 安装双系统 安装虚拟机，在虚拟机上装Linux 作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。 二、安装virtualbox虚拟机下载安装链接参考如下： https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html 三、下载Linux镜像 CentOS（社区企业操作系统） 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。 官网： https://www.centos.org/ 中文网站： https://www.centoschina.cn/ 下载Linux镜像分两种平台： i386 x86_64 如何看自己应该下载哪种镜像，才能正确安装？ 打开已安装的virtualbox，如图，若新建虚拟电脑中选项中Linux是32位的就下载i386的Linux镜像。 怎么下载Linux镜像？ 从CentOS官网下载系统镜像详细教程： https://jingyan.baidu.com/album/1876c85279cedd890a13766c.html?picindex=8 因为我是32位的，安装步骤如下： 随便选择一个镜像地址就可以： 这里选择清华大学开源软件镜像站，下载即可： 四、安装Linux==打开已安装的virtualbox== ==将步骤三中下载的linux镜像加载进来== ==出现下图界面时按Enter== ==按Enter====按Enter====出现下图，等待check====按Enter====按Enter== ==按Enter====出现下图时，说明没加载上镜像，手动在设备中重新选择下== 五、安装后打开所创建的linux系统文字界面：Ctrl+Alt+F1-F6图形界面：Ctrl+Alt +F7 效果如下： ==图形界面====文字界面==]]></content>
+    <title><![CDATA[Git 使用教程]]></title>
+    <url>%2F2019%2F02%2F23%2Fgit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[windows下使用git的方法目录@[toc]一、准备工作 注册一个github账号 安装Git 官网（https://git-scm.com/） 二、在github上的配置1、新建一个仓库名 仓库名字必须是： username.github.io ，其中username是你的用户名；2、新建一个工程 3、配置SSH key（=&gt;Settings）第1步： Git 中 SSH key 生成步骤（在windows下打开git bash，在控制台中输入以下命令。） $ ssh-keygen -t rsa -C “youremail@example.com“ 在自己电脑中C:\Users\Administrator.ssh路径下生成下面两个文件：id_rsaid_rsa.pub 第2步：登录github。打开setting-&gt;SSH keys，点击右上角 New SSH key，把生成好的公钥id_rsa.pub放进 key输入框中y。 提交代码到git肯定要拥有你的github权限才可以，使用ssh key来解决本地和服务器的连接问题 4、测试下，增加个文件上传到仓库看看能否成功,在windows下git bash中操作&gt;…or create a new repository on the command line echo &quot;# read&quot; &gt;&gt; test1 （把# read写入 test1 ） git init （初始化） git add test1 （向仓库中添加README.md文件） git commit -m &quot;first commit&quot; （提交备注） git remote add origin https://github.com/411forget/test.git （添加要提交到哪个仓库） git push -u origin master （从本地向远端推送提交的文件） 查看github中有没有推送的文件： 使用git克隆的方式，之后的更新可以通过 git pull 来快速更新使用git克隆的方式，之后的更新可以通过 git pull 来快速更新步骤如下： $ cd /e/WorkSpaces/hexo/ $ git clone https://github.com/iissnan/hexo-theme-next.git themes/next 持续更新]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[【自动化测试】selenium+python基础]]></title>
-    <url>%2F2018%2F08%2F12%2F%E3%80%90%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91selenium%2Bpython%E5%9F%BA%E7%A1%8020180812%2F</url>
-    <content type="text"><![CDATA[一、selenium简介 免费的分布式的自动化测试工具； 支持多平台：windows、linux、MAC ； 支持多浏览器：ie、ff、safari、opera、chrome； 多语言C、 java、ruby、python 二、前提条件 安装浏览器（这里使用chrome）； 下载chrome driver,把chromedriver.exe存放在..\Google\Chrome\Application\文件夹下 安装python 安装selenium包 三、简单的自动化脚本示例实现功能：打开浏览器=》输入百度网址搜索=》在搜索框输入python=》点击百度一下123456789# -*- coding: utf-8 -*- from selenium import webdriverdri=webdriver.Chrome()dri.set_window_size(1200, 1000)dri.get(&quot;https://www.baidu.com&quot;)dri.find_element_by_id(&quot;kw&quot;).send_keys(&quot;python&quot;)dri.find_element_by_id(&quot;su&quot;).click()dri.quit() 四、元素定位元素定位是自动化测试的核心 定位方法主要有：（1）id ; (2) name; (3)class name ; (4) tag name ; (5) xpath ; (6) css selector ; (7) link test ; (8) partial link test ; 其中xpath定位应用比较多。 举例：type12345678910111213141516171819202122232425如要定位此input输入框，可以用以下几种方式：* id定位&gt; dri.find_element_by_id(&quot;kw&quot;).send_keys(&quot;python&quot;)* name定位&gt; dri.find_element_by_name(&quot;wd&quot;).send_keys(&quot;python&quot;)* tag name定位&gt; dri.find_element_by_tag_name(&quot;kw&quot;).send_keys(&quot;python&quot;)* class name定位&gt; dri.find_element_by_class_name(&quot;s_ipt&quot;).send_keys(&quot;python&quot;)* xpath定位&gt; dri.find_element_by_xpath(&quot;//input[@id=&apos;&apos;kw]&quot;).send_keys(&quot;python&quot;)* css定位&gt; dri.find_element_by_css(&quot;#kw&quot;).send_keys(&quot;python&quot;)如要定位此文字链接，可以用以下几种方式：```&lt;a href=&quot;http://news.baidu.com&quot; target=&quot;_blank&quot; class=&quot;mnav&quot;&gt;新闻&lt;/a&gt; link text定位 dri.find_element_by_link_text(“新闻”).send_keys(“python”) partial link test 定位 dri.find_element_by_link_text(“新闻”).send_keys(“python”) 五、浏览器操作 浏览器最大化 dri.maxmize_window() 设置浏览器宽度、高度 dri.set_window_size(500,500) 浏览器前进、后退 dri.forward()dri.back() 六、操作测试对象常用的方法有以下几种： click 点击 send_keys 输入 submit 提交 clear 清除 text 获取元素的文本信息 七、获取属性值element.get_attribute(“value”) 八、鼠标事件ActionChains类：需要先加载from selenium.webdriver.common.action_chains import ActionChains context_click() 右击 ActionChains(dri).context_click(ppp).perform() #ppp是要操作的元素 double_click() 双击 drag_and_dorp() 拖动]]></content>
+    <title><![CDATA[Linux命令备忘]]></title>
+    <url>%2F2019%2F02%2F23%2FLinux%E5%91%BD%E4%BB%A4%E5%A4%87%E5%BF%98%2F</url>
+    <content type="text"><![CDATA[@TOC 1.ip相关1.1.命令查看Linux服务器ipifconfig 1.2. Linux下用ifconfig命令设置IP、掩码、网关设置IP和掩码 ifconfig eth0 192.168.2.21 netmask 255.255.255.0 设置网关 route add default gw 192.168.2.1 2、ftp查看ftp服务的状态： [root@localhost bin]# service vsftpd status vsftpd: 未被识别的服务 【vsftpd: 未被识别的服务】解决方法： yum install vsftpd 再查看状态： [root@localhost bin]# service vsftpd status vsftpd 已停 【 vsftpd 已停】解决方法： [root@localhost bin]# service vsftpd start 为 vsftpd 启动 vsftpd： [确定] 在Windows的Dos下使用ftp连接： ftp ip地址 3.改变文件属性与权限chgrp —改变文件所属群组chown —改变文件拥有者chmod —改变文件权限 r —读权限—4w —写权限—2x —执行权限—1 user —ugroup —gother —oall —a 举例：设置.bashrc文件有读写执行权限chmod 777 .bashrc 设置user群组为读写执行权限，其他群组只有读执行权限chmod u=rwx,go=rx .bashrc 设置所有群组都加上写权限chmod a+w .bashrc 设置所有群组都取消执行权限chmod a-x .bashrc 4.Linux设置共享目录vim /etc/samba/smb.conf 把下面的代码拷贝到smb.conf文件中 [home] comment = Share Folder with username and password path = /home public = yes writable = yes vaild users = user1 create mask = 0666 directory mask =0777 force user = nobody force group = nogroup available = yes browerable = yes 安装samba,启动服务 yum install samba service smbd restart service smbd status 5.批量修改文件中某一字段的命令find -name *.py|xargs sed -i &apos;s/aaa/bbb/g&apos; 在当前目录下的所有py文件中搜索，把aaa字段替换成bbb字段 6.查看目录下文件或文件夹数目6.1.查看当前目录下的文件数量【不包含子目录的文件】ls -l |grep &quot;^-&quot;|wc -l 6.2.查看当前目录下的文件数目【包含子目录的文件】ls -lR |grep &quot;^-&quot;|wc -l 6.3.查看当前目录下的文件夹目录【不包含子目录中的目录】ls -l|grep &quot;^d&quot;|wc -l 6.4.查看当前路径下的指定前缀名的目录下的所有文件数量ls -lR Test*/|grep &quot;^-&quot;|wc -l 10.快捷键10.1.linux复制粘贴==选中即为复制==方法一：==按一下鼠标滚轮即为粘贴==方法二：==【Shift】+【Insert】即为粘贴== 10.2.曾经使用过的命令快速查找【Ctrl】+R 出现如下reverse-i-searc字段，随后只要输入你要查找的命令行关键字即可搜索，多次按ctrl+r可以接着查找下一条 选中该搜索到的命令使用 【Ctrl】+E 取消本次搜索使用 【Ctrl】+U 10.3.命令输入后需要改动，跳动命令收尾快捷键跳到命令首部：【home】跳到尾部：【End】 10.4.文件补齐功能快捷键Linux默认命令行界面bash shell命令中补齐快捷键：【Tab】 12、Vi编辑器常使用的命令下图所示菜鸟教程里总结键盘图，很nice,推荐! 12.1、打开或新建一个文件vi test.py 12.2、使打开的test.py显示行号/取消行号:set nu :set nonu 12.3、光标迅速移动到第6行，第5个字符6↓ 5→ 12.4、光标迅速回到文件首行;快速移到文件末尾H G 12.5、光标迅速移动到行首、行尾^ $ 12.6、快速复制光标所在行开始数3行代码，并复制到文件末尾(下面三个命令依次使用)3yy G P 12.7、快速删除光标所在行dd 12.8、进入编辑模式i 12.9、回退操作u 12.10、查找字符串hello/hello 13.创建软连接ln -sf /home/work/file new_file ll #使用ll查看链接结果 可得new_file链接到/home/work/file ，当file变化时，new_file会同步变化（备注：用此命令时new_filewen文件夹当前不存在，使用该命令时会新建） 软链接和硬链接的区别，推荐下面的博文介绍：https://blog.csdn.net/gao_zhennan/article/details/79127232 备注：持续更新]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【Ruby】基础整理]]></title>
+    <url>%2F2019%2F02%2F23%2F%E3%80%90Ruby%E3%80%91%E5%9F%BA%E7%A1%80%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[1.在cmd下进入ruby解释器环境cmd-》输入irb 2.获取当前文件路径File.dirname(__FILE__) 3.Ruby web请求 http get请求： #加载模块 require &apos;net/https&apos; require &apos;uri&apos; require &apos;json&apos; para = {} para[&quot;user&quot;] = &apos;root&apos; url = &apos;http://www.XXX.com&apos; uri = URI.parse(url) res = Net::HTTP.post_form(uri, para) resbody = JSON.parse(res.body) http post 请求： require &apos;net/https&apos; require &apos;uri&apos; require &apos;json&apos; para = {} para[&quot;user&quot;] = &apos;root&apos; url = &apos;http://www.XXX.com&apos; uri = URI.parse(url) header={&apos;Content-Type&apos; =&gt; &apos;application/json&apos;} req = Net::HTTP::Post.new(uri.path, header) req.body = para.to_json res = Net::HTTP.new(uri.host, uri.port).start{|http| http.request(req) } resbody = JSON.parse(res.body) http REST类型请求获取cookie： require &apos;net/https&apos; require &apos;uri&apos; require &apos;json&apos; uri=URI.parse(url) para={} para=[&quot;user&quot;]=&quot;root&quot; res==Net::Http.post_form(uri,para) head_hash=res.to_hash if !head_hash.keys.include?(&quot;set-cookie&quot;) puts &quot;Rest类型借口登录认证失败&quot; end head_hash.keys.each{|key| if key ==&quot;set-cookie&quot; return head_hash[&quot;set-cookie&quot;] end } 4.把两个数组一一对应成哈希m=[a,b,c] n=[1,2,3] hash1={} m.each_with_index{|para,value| hash1[para]=value } 5.把字符串数值范围转化为值例如：给定字符串范围“1-30” a=[] for i in 1..30 a&lt;&lt;i end 6.并行操作threads=[] code =lambda{ 执行1 执行2 } theards&lt;&lt;Theard.new(&amp;code) theards.each do|t| t.join end]]></content>
+      <categories>
+        <category>Ruby</category>
+      </categories>
+      <tags>
+        <tag>ruby</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[解决hexo+github+NexT搭建个人博客遇到的问题]]></title>
+    <url>%2F2019%2F02%2F23%2F%E8%A7%A3%E5%86%B3hexo%2Bgithub%2BNexT%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[1、报错不识别num命令：bash: num: command not found未安装node.js或未正确安装node.js官方下载地址：https://nodejs.org/en/ 下载安装时选择安装所有的有关联的包 2.报错：执行$ hexo init 时报错： $ hexo init blog bash: hexo: command not found 原因：hexo没有配置全局变量解决：找到安装位置，把下面的两个地址添加到环境变量中的path中，重启Git bash，执行hexo -v则已经正确添加]]></content>
+      <categories>
+        <category>hexo+github+NexT</category>
+      </categories>
+      <tags>
+        <tag>hexo+github+NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用终端工具MobaXterm登录linux]]></title>
+    <url>%2F2019%2F02%2F23%2F%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7MobaXterm%E7%99%BB%E5%BD%95linux%2F</url>
+    <content type="text"><![CDATA[@TOC 背景 : 访问虚拟机中的Linux，界面不友好，使用不方便快捷，可以下载终端工具MobaXterm来登录linux来快速访问 一、准备工作1、MobaXterm下载官网下载地址（有免费版）：https://mobaxterm.mobatek.net/download.html 官网主页：https://mobaxterm.mobatek.net/ 2、已经部署好linux服务器如果想安装虚拟机，在虚拟机中部署linux，可以参考博文https://blog.csdn.net/qq_35061334/article/details/83717539 二、怎么使用MobaXterm登录Linux？1、查看Linux的ip地址ifconfig 如果没有这一行那就需要自己设置下 设置IP和掩码： ifconfig eth0 192.168.2.247 netmask 255.255.255.0 2、打开下载的MobaXterm 3、通过ssh连接linux Remote host: 填写要登录的Linux的ip地址 Specfy username : 填写要使用的Linux用户名进行登录 4、登录正常如下图： 接下来可以体验十分友好的linux命令行界面的操作啦 5、推荐：https://cloud.tencent.com/developer/news/244102]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【ruby】批量刷新目录下指定文件内的字段]]></title>
+    <url>%2F2019%2F02%2F23%2F%E3%80%90ruby%E3%80%91%E6%89%B9%E9%87%8F%E5%88%B7%E6%96%B0%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%86%85%E7%9A%84%E5%AD%97%E6%AE%B5%2F</url>
+    <content type="text"><![CDATA[【功能】 1、操作目录：F:\my job\tools\2019test_file2、查找文件：result.txt3、需要动态获取的字段：例arr=Dev.add(“Ec_1”)之中的arr字段（不同的result.txt文件中的字段可能不同，该字段是动态的，可以使用正则来匹配）4、原字段：self.manage5、新字段：步骤3中获取到的字段==result.txt文件的内容：==1234567class Test_1arr=Dev.add(&quot;Ec_1&quot;)self.manage.add_rule(&quot;rule&quot;)test1 hello wordfilemk l test1self.manage.add_rule(&quot;rule&quot;) ==刷新后的result.txt文件的内容：==1234567class Test_1arr=Dev.add(&quot;Ec_1&quot;)arr.add_rule(&quot;rule&quot;)test1 hello wordfilemk l test1arr.add_rule(&quot;rule&quot;) ==实现代码如下：==123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113#encoding=UTF-8 class ChangeData #初始化 def initialize() @result=&quot;There are no updated files:\n&quot; @dir=File.dirname(__FILE__)+&apos;/result.txt&apos; puts &quot;@dir:#&#123;@dir&#125;&quot; File.new(@dir,&quot;w+&quot;) end #遍历目录下面指定的文件 def traverse_dir(file_path) #如果 path 是一个目录，则返回 true。 if File.directory? file_path Dir.foreach(file_path) do |file| if file !=&quot;.&quot; and file !=&quot;..&quot; puts &quot;******************************file:#&#123;file&#125;&quot; puts &quot;******************************file_path:#&#123;file_path&#125;&quot; traverse_dir(file_path+&quot;\\&quot;+file) end end else puts &quot;======&quot; puts &quot;file_path:#&#123;file_path&#125;&quot; puts &quot;File:#&#123;File.basename(file_path)&#125;, Size:#&#123;File.size(file_path)&#125;&quot; if file_path.include?(&apos;txt&apos;) @result1 = read_file(file_path) write_in(file_path,@result1) end end end #第一个 返回更新后的内容 def read_file(filename) puts &quot;=======================output==========================&quot; str = &quot;&quot; re_value=[] num=0 #获取设备个数和添加规则个数 File.open(filename,&quot;r+&quot;)&#123;|f| f.each_line&#123;|line| if line=~/Dev.add/ re_value &lt;&lt; line.scan(/^\s*(\S+)\s*=\s*Dev.add\(/).flatten re_value.flatten! end if line=~/self.manage/ puts &quot;=====&quot; num +=1 end &#125; &#125; #把self.manage替换成对应的设备变量 i=0 #新增一个txt文件用来记录未刷脚本名称 File.open(filename,&quot;r+&quot;)&#123;|f| f.each_line&#123;|line| puts &quot;re_value:#&#123;re_value&#125;&quot; puts &quot;re_value.size:#&#123;re_value.size&#125;&quot; puts &quot;num:#&#123;num&#125;&quot; #class Test_1 #获取用例名 if line.include?(&quot;class&quot;) &amp;&amp; re_value.size&gt;1 &amp;&amp; num!=re_value.size puts &quot;class**************************88&quot; testcase_name=line.scan(/^\s*class\s*(\S+)/).flatten @result =@result+testcase_name[0]+&quot;\n&quot; break end if line.include?(&quot;self.manage&quot;) if re_value.size==1 str += line.gsub(&apos;self.manage&apos;,re_value[0]) elsif re_value.size&gt;1 &amp;&amp; num==re_value.size puts &quot;i:#&#123;i&#125;&quot; puts &quot;re_value[i]#&#123;re_value[i]&#125;&quot; if i&lt;=num puts &quot;i:#&#123;i&#125;,num:#&#123;num&#125;&quot; str += line.gsub(&quot;self.manage&quot;,re_value[i]) i +=1 end end else str += line end puts &quot;str:#&#123;str&#125;&quot; &#125; &#125; return str end #第二个 把返回更新后的内容重新写入即文本替换 def write_in(filename,str) puts &quot;=======================input==========================&quot; puts str if str!=&quot;&quot; File.open(filename,&quot;w&quot;)&#123;|f| f.write str &#125; end end #写未刷新的用例名 def wirte_txt() puts &quot;@result:#&#123;@result&#125;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&quot; File.open(@dir,&quot;w+&quot;)&#123;|f| f.write @result &#125; endend#调用事例data=ChangeData.new()data.traverse_dir(&apos;F:\my job\tools\2019test_file&apos;)data.wirte_txt()]]></content>
+      <categories>
+        <category>Ruby</category>
+      </categories>
+      <tags>
+        <tag>ruby</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在虚拟机virtualbox中安装linux]]></title>
+    <url>%2F2019%2F02%2F23%2F%E5%9C%A8%E8%99%9A%E6%8B%9F%E6%9C%BAvirtualbox%E4%B8%AD%E5%AE%89%E8%A3%85linux%2F</url>
+    <content type="text"><![CDATA[一、安装Linux的两种方式： 安装双系统 安装虚拟机，在虚拟机上装Linux 作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。 二、安装virtualbox虚拟机下载安装链接参考如下： https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html 三、下载Linux镜像 CentOS（社区企业操作系统） 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。 官网： https://www.centos.org/ 中文网站： https://www.centoschina.cn/ 下载Linux镜像分两种平台： i386 x86_64 如何看自己应该下载哪种镜像，才能正确安装？ 打开已安装的virtualbox，如图，若新建虚拟电脑中选项中Linux是32位的就下载i386的Linux镜像。 怎么下载Linux镜像？ 从CentOS官网下载系统镜像详细教程： https://jingyan.baidu.com/album/1876c85279cedd890a13766c.html?picindex=8 因为我是32位的，安装步骤如下： 随便选择一个镜像地址就可以： 这里选择清华大学开源软件镜像站，下载即可： 四、安装Linux==打开已安装的virtualbox== ==将步骤三中下载的linux镜像加载进来== ==出现下图界面时按Enter== ==按Enter====按Enter====出现下图，等待check====按Enter====按Enter== ==按Enter====出现下图时，说明没加载上镜像，手动在设备中重新选择下== 五、安装后打开所创建的linux系统文字界面：Ctrl+Alt+F1-F6图形界面：Ctrl+Alt +F7 效果如下： ==图形界面====文字界面==]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【接口】http post和get的区别]]></title>
+    <url>%2F2018%2F08%2F12%2F%E3%80%90%E6%8E%A5%E5%8F%A3%E3%80%91http%20post%E5%92%8Cget%E7%9A%84%E5%8C%BA%E5%88%AB20180812%2F</url>
+    <content type="text"><![CDATA[一、http协议简介 HTTP是一个客户端和服务器端请求和应答的标准（TCP）。客户端是终端用户，服务器端是网站。通过使用Web浏览器、网络爬虫或者其它的工具，客户端发起一个到服务器上指定端口（默认端口为80）的HTTP请求。 由HTTP客户端发起一个请求，建立一个到服务器指定端口（默认是80端口）的TCP连接。HTTP服务器则在那个端口监听客户端发送过来的请求。一旦收到请求，服务器（向客户端）发回一个状态行，比如”HTTP/1.1 200 OK”，和（响应的）消息，消息的消息体可能是请求的文件、错误消息、或者其它一些信息。 基于HTTP协议的客户/服务器模式的信息交换过程，它分四个过程：建立连接、发送请求信息、返回响应信息、关闭连接。 二、两种 HTTP 请求方法：GET 和 POST GET 1、从服务器上获取数据2、可被缓存,保留在浏览器历史记录中3、可被收藏为书签4、安全性低5、有长度限制6、执行效率高 POST 1、向服务器传送数据；2、不会被缓存,不会保留在浏览器历史记录中3、不能被收藏为书签4、对数据长度没有要求5、安全性相对较高6、执行效率较get低]]></content>
       <categories>
         <category>自动化测试</category>
       </categories>
@@ -17,9 +89,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[【接口】http post和get的区别]]></title>
-    <url>%2F2018%2F08%2F12%2F%E3%80%90%E6%8E%A5%E5%8F%A3%E3%80%91http%20post%E5%92%8Cget%E7%9A%84%E5%8C%BA%E5%88%AB20180812%2F</url>
-    <content type="text"><![CDATA[一、http协议简介 HTTP是一个客户端和服务器端请求和应答的标准（TCP）。客户端是终端用户，服务器端是网站。通过使用Web浏览器、网络爬虫或者其它的工具，客户端发起一个到服务器上指定端口（默认端口为80）的HTTP请求。 由HTTP客户端发起一个请求，建立一个到服务器指定端口（默认是80端口）的TCP连接。HTTP服务器则在那个端口监听客户端发送过来的请求。一旦收到请求，服务器（向客户端）发回一个状态行，比如”HTTP/1.1 200 OK”，和（响应的）消息，消息的消息体可能是请求的文件、错误消息、或者其它一些信息。 基于HTTP协议的客户/服务器模式的信息交换过程，它分四个过程：建立连接、发送请求信息、返回响应信息、关闭连接。 二、两种 HTTP 请求方法：GET 和 POST GET 1、从服务器上获取数据2、可被缓存,保留在浏览器历史记录中3、可被收藏为书签4、安全性低5、有长度限制6、执行效率高 POST 1、向服务器传送数据；2、不会被缓存,不会保留在浏览器历史记录中3、不能被收藏为书签4、对数据长度没有要求5、安全性相对较高6、执行效率较get低]]></content>
+    <title><![CDATA[【自动化测试】selenium+python基础]]></title>
+    <url>%2F2018%2F08%2F12%2F%E3%80%90%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91selenium%2Bpython%E5%9F%BA%E7%A1%8020180812%2F</url>
+    <content type="text"><![CDATA[一、selenium简介 免费的分布式的自动化测试工具； 支持多平台：windows、linux、MAC ； 支持多浏览器：ie、ff、safari、opera、chrome； 多语言C、 java、ruby、python 二、前提条件 安装浏览器（这里使用chrome）； 下载chrome driver,把chromedriver.exe存放在..\Google\Chrome\Application\文件夹下 安装python 安装selenium包 三、简单的自动化脚本示例实现功能：打开浏览器=》输入百度网址搜索=》在搜索框输入python=》点击百度一下123456789# -*- coding: utf-8 -*- from selenium import webdriverdri=webdriver.Chrome()dri.set_window_size(1200, 1000)dri.get(&quot;https://www.baidu.com&quot;)dri.find_element_by_id(&quot;kw&quot;).send_keys(&quot;python&quot;)dri.find_element_by_id(&quot;su&quot;).click()dri.quit() 四、元素定位元素定位是自动化测试的核心 定位方法主要有：（1）id ; (2) name; (3)class name ; (4) tag name ; (5) xpath ; (6) css selector ; (7) link test ; (8) partial link test ; 其中xpath定位应用比较多。 举例：type12345678910111213141516171819202122232425如要定位此input输入框，可以用以下几种方式：* id定位&gt; dri.find_element_by_id(&quot;kw&quot;).send_keys(&quot;python&quot;)* name定位&gt; dri.find_element_by_name(&quot;wd&quot;).send_keys(&quot;python&quot;)* tag name定位&gt; dri.find_element_by_tag_name(&quot;kw&quot;).send_keys(&quot;python&quot;)* class name定位&gt; dri.find_element_by_class_name(&quot;s_ipt&quot;).send_keys(&quot;python&quot;)* xpath定位&gt; dri.find_element_by_xpath(&quot;//input[@id=&apos;&apos;kw]&quot;).send_keys(&quot;python&quot;)* css定位&gt; dri.find_element_by_css(&quot;#kw&quot;).send_keys(&quot;python&quot;)如要定位此文字链接，可以用以下几种方式：```&lt;a href=&quot;http://news.baidu.com&quot; target=&quot;_blank&quot; class=&quot;mnav&quot;&gt;新闻&lt;/a&gt; link text定位 dri.find_element_by_link_text(“新闻”).send_keys(“python”) partial link test 定位 dri.find_element_by_link_text(“新闻”).send_keys(“python”) 五、浏览器操作 浏览器最大化 dri.maxmize_window() 设置浏览器宽度、高度 dri.set_window_size(500,500) 浏览器前进、后退 dri.forward()dri.back() 六、操作测试对象常用的方法有以下几种： click 点击 send_keys 输入 submit 提交 clear 清除 text 获取元素的文本信息 七、获取属性值element.get_attribute(“value”) 八、鼠标事件ActionChains类：需要先加载from selenium.webdriver.common.action_chains import ActionChains context_click() 右击 ActionChains(dri).context_click(ppp).perform() #ppp是要操作的元素 double_click() 双击 drag_and_dorp() 拖动]]></content>
       <categories>
         <category>自动化测试</category>
       </categories>

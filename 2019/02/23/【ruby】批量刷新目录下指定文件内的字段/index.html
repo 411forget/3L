@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ruby," />
 
 
 
@@ -83,56 +83,18 @@
 
 
 
-<meta name="description" content="@TOC 一、安装Linux的两种方式： 安装双系统 安装虚拟机，在虚拟机上装Linux  作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。 二、安装virtualbox虚拟机下载安装链接参考如下： https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;amp;pn=0.html 三、下载Linux镜像">
+<meta name="description" content="【功能】 1、操作目录：F:\my job\tools\2019test_file2、查找文件：result.txt3、需要动态获取的字段：例arr=Dev.add(“Ec_1”)之中的arr字段（不同的result.txt文件中的字段可能不同，该字段是动态的，可以使用正则来匹配）4、原字段：self.manage5、新字段：步骤3中获取到的字段">
+<meta name="keywords" content="ruby">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3L的博客">
-<meta property="og:url" content="https://yoursite.com/2019/01/19/在虚拟机virtualbox中安装linux/index.html">
+<meta property="og:title" content="【ruby】批量刷新目录下指定文件内的字段">
+<meta property="og:url" content="https://yoursite.com/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/index.html">
 <meta property="og:site_name" content="3L的博客">
-<meta property="og:description" content="@TOC 一、安装Linux的两种方式： 安装双系统 安装虚拟机，在虚拟机上装Linux  作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。 二、安装virtualbox虚拟机下载安装链接参考如下： https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;amp;pn=0.html 三、下载Linux镜像">
+<meta property="og:description" content="【功能】 1、操作目录：F:\my job\tools\2019test_file2、查找文件：result.txt3、需要动态获取的字段：例arr=Dev.add(“Ec_1”)之中的arr字段（不同的result.txt文件中的字段可能不同，该字段是动态的，可以使用正则来匹配）4、原字段：self.manage5、新字段：步骤3中获取到的字段">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104164157366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2018110416565721.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104165740974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104165753589.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104165950723.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104170001212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205435403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205450581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205506445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205523728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205538709.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205558582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2018110420561265.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104205956131.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/201811042100106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104210019755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2018110421003326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104210905579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104210916363.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104210924831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104210938312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104211359380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104211551837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104212509496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104212522292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104213858596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/201811042152487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104215940792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2018110422000867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220018957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2018110422004892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220102222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220113225.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220128534.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220150517.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220933688.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104220946968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181104221226633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-01-19T02:40:58.536Z">
+<meta property="og:updated_time" content="2019-02-23T08:45:34.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3L的博客">
-<meta name="twitter:description" content="@TOC 一、安装Linux的两种方式： 安装双系统 安装虚拟机，在虚拟机上装Linux  作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。 二、安装virtualbox虚拟机下载安装链接参考如下： https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;amp;pn=0.html 三、下载Linux镜像">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181104164157366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70">
+<meta name="twitter:title" content="【ruby】批量刷新目录下指定文件内的字段">
+<meta name="twitter:description" content="【功能】 1、操作目录：F:\my job\tools\2019test_file2、查找文件：result.txt3、需要动态获取的字段：例arr=Dev.add(“Ec_1”)之中的arr字段（不同的result.txt文件中的字段可能不同，该字段是动态的，可以使用正则来匹配）4、原字段：self.manage5、新字段：步骤3中获取到的字段">
 
 
 
@@ -162,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://yoursite.com/2019/01/19/在虚拟机virtualbox中安装linux/"/>
+  <link rel="canonical" href="https://yoursite.com/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/"/>
 
 
 
 
 
-  <title> | 3L的博客</title>
+  <title>【ruby】批量刷新目录下指定文件内的字段 | 3L的博客</title>
   
 
 
@@ -339,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/01/19/在虚拟机virtualbox中安装linux/">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="3L">
@@ -356,7 +318,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline"></h2>
+          <h2 class="post-title" itemprop="name headline">【ruby】批量刷新目录下指定文件内的字段</h2>
         
 
         <div class="post-meta">
@@ -368,8 +330,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-19T10:43:53+08:00">
-                2019-01-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T15:16:34+08:00">
+                2019-02-23
               </time>
             
 
@@ -379,6 +341,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ruby/" itemprop="url" rel="index">
+                    <span itemprop="name">Ruby</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -387,9 +371,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/19/在虚拟机virtualbox中安装linux/#comments" itemprop="discussionUrl">
+                <a href="/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/01/19/在虚拟机virtualbox中安装linux/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/02/23/【ruby】批量刷新目录下指定文件内的字段/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -422,62 +406,11 @@
       
 
       
-        <p>@<a href="在虚拟机virtualbox中安装linux">TOC</a></p>
-<h2 id="一、安装Linux的两种方式："><a href="#一、安装Linux的两种方式：" class="headerlink" title="一、安装Linux的两种方式："></a>一、安装Linux的两种方式：</h2><ol>
-<li>安装双系统</li>
-<li>安装虚拟机，在虚拟机上装Linux</li>
-</ol>
-<p>作为一个新手想学习Linux最好还是选择使用虚拟机来安装吧，在这里我们使用virtualbox虚拟机。</p>
-<h2 id="二、安装virtualbox虚拟机"><a href="#二、安装virtualbox虚拟机" class="headerlink" title="二、安装virtualbox虚拟机"></a>二、安装virtualbox虚拟机</h2><p>下载安装链接参考如下：</p>
-<p><a href="https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html" target="_blank" rel="noopener">https://dl.pconline.com.cn/html_2/1/59/id=46462&amp;pn=0.html</a></p>
-<h2 id="三、下载Linux镜像"><a href="#三、下载Linux镜像" class="headerlink" title="三、下载Linux镜像"></a>三、下载Linux镜像</h2><ol>
-<li><p><strong>CentOS</strong>（社区企业操作系统） 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。</p>
-<p> <strong>官网：</strong><br> <a href="https://www.centos.org/" target="_blank" rel="noopener">https://www.centos.org/</a></p>
-<p> <strong>中文网站：</strong><br> <a href="https://www.centoschina.cn/" target="_blank" rel="noopener">https://www.centoschina.cn/</a></p>
-</li>
-</ol>
-<ol start="2">
-<li><p>下载Linux镜像分两种平台：<br>  i386<br> x86_64</p>
-</li>
-<li><p>如何看自己应该下载哪种镜像，才能正确安装？</p>
-<p> 打开已安装的virtualbox，如图，若新建虚拟电脑中选项中Linux是32位的就下载i386的Linux镜像。<br> <img src="https://img-blog.csdnimg.cn/20181104164157366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="新建虚拟电脑"></p>
-</li>
-</ol>
-<ol start="4">
-<li><p>怎么下载Linux镜像？</p>
-<p> 从CentOS官网下载系统镜像详细教程：<br> <a href="https://jingyan.baidu.com/album/1876c85279cedd890a13766c.html?picindex=8" target="_blank" rel="noopener">https://jingyan.baidu.com/album/1876c85279cedd890a13766c.html?picindex=8</a></p>
-</li>
-</ol>
-<p>因为我是32位的，安装步骤如下：<br><img src="https://img-blog.csdnimg.cn/2018110416565721.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104165740974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104165753589.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p>随便选择一个镜像地址就可以：<br><img src="https://img-blog.csdnimg.cn/20181104165950723.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<p>这里选择清华大学开源软件镜像站，下载即可：<br><img src="https://img-blog.csdnimg.cn/20181104170001212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="Linux镜像下载截图"></p>
-<h2 id="四、安装Linux"><a href="#四、安装Linux" class="headerlink" title="四、安装Linux"></a>四、安装Linux</h2><p>==打开已安装的virtualbox==</p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205435403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205450581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205506445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205523728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205538709.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205558582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110420561265.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104205956131.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==将步骤三中下载的linux镜像加载进来==<br><img src="https://img-blog.csdnimg.cn/201811042100106.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104210019755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110421003326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==出现下图界面时按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104210905579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104210916363.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104210924831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104210938312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==出现下图，等待check==<br><img src="https://img-blog.csdnimg.cn/20181104211359380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104211551837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104212509496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>==按Enter==<br><img src="https://img-blog.csdnimg.cn/20181104212522292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==出现下图时，说明没加载上镜像，手动在设备中重新选择下==<br><img src="https://img-blog.csdnimg.cn/20181104213858596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/201811042152487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104215940792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110422000867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220018957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/2018110422004892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220102222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220113225.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220128534.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220150517.png" alt="在这里插入图片描述"></p>
-<h2 id="五、安装后打开所创建的linux系统"><a href="#五、安装后打开所创建的linux系统" class="headerlink" title="五、安装后打开所创建的linux系统"></a>五、安装后打开所创建的linux系统</h2><p>文字界面：Ctrl+Alt+F1-F6<br>图形界面：Ctrl+Alt +F7</p>
-<p>效果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/20181104220933688.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==图形界面==<br><img src="https://img-blog.csdnimg.cn/20181104220946968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>==文字界面==<br><img src="https://img-blog.csdnimg.cn/20181104221226633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MDYxMzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+        <p>【功能】</p>
+<p><strong>1、操作目录</strong>：F:\my job\tools\2019test_file<br><strong>2、查找文件</strong>：result.txt<br><strong>3、需要动态获取的字段</strong>：例arr=Dev.add(“Ec_1”)之中的arr字段（不同的result.txt文件中的字段可能不同，该字段是动态的，可以使用正则来匹配）<br><strong>4、原字段</strong>：self.manage<br><strong>5、新字段</strong>：步骤3中获取到的字段<br><a id="more"></a><br>==result.txt文件的内容：==<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Test_1</span><br><span class="line">arr=Dev.add(&quot;Ec_1&quot;)</span><br><span class="line">self.manage.add_rule(&quot;rule&quot;)</span><br><span class="line">test1 hello word</span><br><span class="line">file</span><br><span class="line">mk l test1</span><br><span class="line">self.manage.add_rule(&quot;rule&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>==刷新后的result.txt文件的内容：==<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Test_1</span><br><span class="line">arr=Dev.add(&quot;Ec_1&quot;)</span><br><span class="line">arr.add_rule(&quot;rule&quot;)</span><br><span class="line">test1 hello word</span><br><span class="line">file</span><br><span class="line">mk l test1</span><br><span class="line">arr.add_rule(&quot;rule&quot;)</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>==实现代码如下：==<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br></pre></td><td class="code"><pre><span class="line">#encoding=UTF-8  </span><br><span class="line"></span><br><span class="line">class ChangeData</span><br><span class="line">	#初始化</span><br><span class="line">	def initialize()</span><br><span class="line">		@result=&quot;There are no updated files:\n&quot;</span><br><span class="line">		@dir=File.dirname(__FILE__)+&apos;/result.txt&apos;</span><br><span class="line">		puts &quot;@dir:#&#123;@dir&#125;&quot;</span><br><span class="line">		File.new(@dir,&quot;w+&quot;)</span><br><span class="line">	end</span><br><span class="line">	#遍历目录下面指定的文件</span><br><span class="line">	def traverse_dir(file_path)</span><br><span class="line">		#如果 path 是一个目录，则返回 true。</span><br><span class="line">		if File.directory? file_path</span><br><span class="line">			Dir.foreach(file_path) do |file|</span><br><span class="line">				if file !=&quot;.&quot; and file !=&quot;..&quot; </span><br><span class="line">					puts &quot;******************************file:#&#123;file&#125;&quot;</span><br><span class="line">					puts &quot;******************************file_path:#&#123;file_path&#125;&quot;</span><br><span class="line">					traverse_dir(file_path+&quot;\\&quot;+file)</span><br><span class="line">				end</span><br><span class="line">			end </span><br><span class="line">		else</span><br><span class="line">			puts &quot;======&quot;</span><br><span class="line">			puts &quot;file_path:#&#123;file_path&#125;&quot;</span><br><span class="line">			puts &quot;File:#&#123;File.basename(file_path)&#125;, Size:#&#123;File.size(file_path)&#125;&quot;</span><br><span class="line">			if file_path.include?(&apos;txt&apos;)</span><br><span class="line">				@result1 = read_file(file_path)</span><br><span class="line">				write_in(file_path,@result1)</span><br><span class="line">			end</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	#第一个 返回更新后的内容</span><br><span class="line">	def read_file(filename)</span><br><span class="line">		puts &quot;=======================output==========================&quot;</span><br><span class="line">		str = &quot;&quot;</span><br><span class="line">		re_value=[]</span><br><span class="line">		num=0</span><br><span class="line">		#获取设备个数和添加规则个数</span><br><span class="line">		File.open(filename,&quot;r+&quot;)&#123;|f|</span><br><span class="line">			f.each_line&#123;|line|</span><br><span class="line">				if line=~/Dev.add/</span><br><span class="line">					re_value &lt;&lt; line.scan(/^\s*(\S+)\s*=\s*Dev.add\(/).flatten</span><br><span class="line">					re_value.flatten!</span><br><span class="line">				end</span><br><span class="line">				if  line=~/self.manage/</span><br><span class="line">					puts &quot;=====&quot;</span><br><span class="line">					num +=1</span><br><span class="line">				end</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">      	#把self.manage替换成对应的设备变量</span><br><span class="line">      	i=0</span><br><span class="line">      	#新增一个txt文件用来记录未刷脚本名称</span><br><span class="line">      	File.open(filename,&quot;r+&quot;)&#123;|f|</span><br><span class="line">      		f.each_line&#123;|line|</span><br><span class="line">      			puts &quot;re_value:#&#123;re_value&#125;&quot;</span><br><span class="line">      			puts &quot;re_value.size:#&#123;re_value.size&#125;&quot;</span><br><span class="line">      			puts &quot;num:#&#123;num&#125;&quot;</span><br><span class="line">      			#class Test_1</span><br><span class="line">      			#获取用例名</span><br><span class="line">      			if line.include?(&quot;class&quot;) &amp;&amp; re_value.size&gt;1 &amp;&amp; num!=re_value.size</span><br><span class="line">      				puts &quot;class**************************88&quot;</span><br><span class="line">      				testcase_name=line.scan(/^\s*class\s*(\S+)/).flatten</span><br><span class="line">      				@result =@result+testcase_name[0]+&quot;\n&quot;</span><br><span class="line">      				break</span><br><span class="line">      			end</span><br><span class="line">      			if line.include?(&quot;self.manage&quot;)</span><br><span class="line">      				if re_value.size==1</span><br><span class="line">      					str += line.gsub(&apos;self.manage&apos;,re_value[0])</span><br><span class="line">      				elsif re_value.size&gt;1 &amp;&amp; num==re_value.size</span><br><span class="line">      					puts &quot;i:#&#123;i&#125;&quot;</span><br><span class="line">      					puts &quot;re_value[i]#&#123;re_value[i]&#125;&quot;</span><br><span class="line">      					if i&lt;=num</span><br><span class="line">      						puts &quot;i:#&#123;i&#125;,num:#&#123;num&#125;&quot;</span><br><span class="line">      						str += line.gsub(&quot;self.manage&quot;,re_value[i]) </span><br><span class="line">      						i +=1 </span><br><span class="line">      					end</span><br><span class="line">      				end</span><br><span class="line">      			else</span><br><span class="line">      				str += line</span><br><span class="line">      			end</span><br><span class="line">      			puts &quot;str:#&#123;str&#125;&quot;</span><br><span class="line">      		&#125;</span><br><span class="line">      	&#125;</span><br><span class="line">      	return str</span><br><span class="line">      end</span><br><span class="line"></span><br><span class="line">	#第二个 把返回更新后的内容重新写入即文本替换</span><br><span class="line">	def write_in(filename,str)</span><br><span class="line">		puts &quot;=======================input==========================&quot;</span><br><span class="line">		puts str</span><br><span class="line">		if str!=&quot;&quot;</span><br><span class="line">			File.open(filename,&quot;w&quot;)&#123;|f|</span><br><span class="line">				f.write str </span><br><span class="line">			&#125; </span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line">	#写未刷新的用例名</span><br><span class="line">	def wirte_txt()</span><br><span class="line">		puts &quot;@result:#&#123;@result&#125;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&quot;</span><br><span class="line">		File.open(@dir,&quot;w+&quot;)&#123;|f|</span><br><span class="line">			f.write @result</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#调用事例</span><br><span class="line">data=ChangeData.new()</span><br><span class="line">data.traverse_dir(&apos;F:\my job\tools\2019test_file&apos;)</span><br><span class="line">data.wirte_txt()</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -504,6 +437,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/ruby/" rel="tag"># ruby</a>
+          
+        </div>
+      
 
       
       
@@ -528,8 +467,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/12/【自动化测试】selenium+python基础20180812/" rel="next" title="【自动化测试】selenium+python基础">
-                <i class="fa fa-chevron-left"></i> 【自动化测试】selenium+python基础
+              <a href="/2019/02/23/在虚拟机virtualbox中安装linux/" rel="next" title="在虚拟机virtualbox中安装linux">
+                <i class="fa fa-chevron-left"></i> 在虚拟机virtualbox中安装linux
               </a>
             
           </div>
@@ -537,6 +476,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/23/使用终端工具MobaXterm登录linux/" rel="prev" title="使用终端工具MobaXterm登录linux">
+                使用终端工具MobaXterm登录linux <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -624,17 +567,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -653,7 +587,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -664,7 +598,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -675,7 +609,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -698,22 +632,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、安装Linux的两种方式："><span class="nav-number">1.</span> <span class="nav-text">一、安装Linux的两种方式：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装virtualbox虚拟机"><span class="nav-number">2.</span> <span class="nav-text">二、安装virtualbox虚拟机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、下载Linux镜像"><span class="nav-number">3.</span> <span class="nav-text">三、下载Linux镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、安装Linux"><span class="nav-number">4.</span> <span class="nav-text">四、安装Linux</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、安装后打开所创建的linux系统"><span class="nav-number">5.</span> <span class="nav-text">五、安装后打开所创建的linux系统</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -899,9 +817,9 @@ var jiathis_config={
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://yoursite.com/2019/01/19/在虚拟机virtualbox中安装linux/';
-          this.page.identifier = '2019/01/19/在虚拟机virtualbox中安装linux/';
-          this.page.title = '';
+          this.page.url = 'https://yoursite.com/2019/02/23/【ruby】批量刷新目录下指定文件内的字段/';
+          this.page.identifier = '2019/02/23/【ruby】批量刷新目录下指定文件内的字段/';
+          this.page.title = '【ruby】批量刷新目录下指定文件内的字段';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://3L.disqus.com/embed.js';
